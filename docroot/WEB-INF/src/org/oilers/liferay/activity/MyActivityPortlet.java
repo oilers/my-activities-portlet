@@ -60,7 +60,7 @@ public class MyActivityPortlet extends MVCPortlet {
 				request.getPreferences().setValue("content", content);
 			}
 		} catch(Exception e) {
-			log.error(e);
+			log.error("Something went wrong rendering the portlet!!", e);
 		}
 		super.render(request, response);
 	}
